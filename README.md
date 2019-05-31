@@ -9,5 +9,6 @@ npm run webpack
 
 # 相关库
 ```
-html-webpack-plugin
+clean-webpack-plugin // 自动清理dist目录
+html-webpack-plugin  // 自动注入js等到模板html
 ```
