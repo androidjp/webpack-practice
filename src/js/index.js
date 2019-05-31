@@ -1,2 +1,3 @@
-require('./vender/HelloWorldText')()
-require('../css/styles.css')
+import helloWorld from './vender/HelloWorldText'
+helloWorld()
+import '../css/styles.css'
