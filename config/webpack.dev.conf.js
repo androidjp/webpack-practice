@@ -14,5 +14,10 @@ module.exports = {
         // 生成一个HTML文件，并自动注入所有生成的bundle
         new HtmlWebpackPlugin({template: path.resolve(__dirname,'../src/html/index.html')})
     ],
+    module: {
+        rules: [
+            { test: /\.css$/, use: ['style-loader', 'css-loader'] }
+        ]
+    },
     mode: 'development'
 }
