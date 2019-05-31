@@ -1,5 +1,5 @@
 # 解释
-这是只有一个插件`html-webpack-plugin`的一个纯webpack项目。
+这是只编译JS的分支。
 
 # 命令
 ```
@@ -9,5 +9,7 @@ npm run webpack
 
 # 相关库
 ```
-html-webpack-plugin
+webpack
+webpack-cli
+clean-webpack-plugin // 自动清理dist 目录
 ```
