@@ -1,3 +1,7 @@
 import helloWorld from './vender/HelloWorldText'
-helloWorld()
+import { addElement } from './vender/MyContent'
 import '../css/styles.css'
+
+helloWorld()
+addElement('AAA')
+addElement('BBB')
