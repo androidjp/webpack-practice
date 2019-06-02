@@ -35,7 +35,11 @@ module.exports = {
             filename: 'article.html',
             title: 'Acticle',
             chunks: ['article'],
-            date: new Date()
+            date: new Date(),
+            minify: {
+                removeComments: true,
+                collapseWhitespace: true
+            }
         }),
     ],
     mode: 'development'
