@@ -1,8 +1,5 @@
 # 解释
-这是只有一个插件`html-webpack-plugin`的一个纯webpack项目。
-并尝试多页面的情况。
-
-主要是配置 htmlWebpackPlugin的各种参数
+less-loader, ejs-loader, html-loader 的使用
 
 # 命令
 ```
@@ -13,4 +10,9 @@ npm run webpack
 # 相关库
 ```
 html-webpack-plugin
+html-loader
+css-loader
+style-loader
+less-loader
+ejs-loader
 ```
