@@ -24,11 +24,45 @@ module.exports = {
             { test: /\.less$/, use:['style-loader','css-loader', 'less-loader'] },
             { test: /\.html$/, use: 'html-loader' },
             { test: /\.ejs$/, use: 'ejs-loader' },
-            { test: /\.(png|jpg|gif|svg)$/,
-                loader: 'file-loader',
-                options: {
-                    name: 'assets/[name]-[hash:5].[ext]'
-                }
+
+            // file-loader
+            // { test: /\.(png|jpg|gif|svg)$/,
+            //     loader: 'file-loader',
+            //     options: {
+            //         name: 'assets/[name]-[hash:5].[ext]'
+            //     }
+            // },
+            
+            // url-loader
+            // { test: /\.(png|jpg|gif|svg)$/,
+            //     loader: 'url-loader',
+            //     options: {
+            //         limit: 20000,
+            //         name: 'assets/[name]-[hash:5].[ext]'
+            //     }
+            // }
+
+            // image-webpack-loader
+            // { test: /\.(png|jpg|gif|svg)$/,
+            //     loaders: [
+            //         {
+            //             loader: 'url-loader',
+            //             options: {
+            //                 limit: 20000,
+            //                 name: 'assets/[name]-[hash:5].[ext]'
+            //             }
+            //         },
+            //         'image-webpack-loader'
+            //     ]
+            // }
+
+            // 简易写法
+            { 
+                test: /\.(png|jpg|gif|svg)$/,
+                loaders: [
+                    'url-loader?limit=20000&name=asserts/[name]-[hash:5].[ext]',
+                    'image-webpack-loader'
+                ]
             }
         ]
     },
