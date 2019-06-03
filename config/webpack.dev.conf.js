@@ -24,7 +24,12 @@ module.exports = {
             { test: /\.less$/, use:['style-loader','css-loader', 'less-loader'] },
             { test: /\.html$/, use: 'html-loader' },
             { test: /\.ejs$/, use: 'ejs-loader' },
-            { test: /\.(png|jpg|gif|svg)$/, use: 'file-loader' }
+            { test: /\.(png|jpg|gif|svg)$/,
+                loader: 'file-loader',
+                options: {
+                    name: 'assets/[name]-[hash:5].[ext]'
+                }
+            }
         ]
     },
     mode: 'development'
