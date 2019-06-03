@@ -24,6 +24,7 @@ module.exports = {
             { test: /\.less$/, use:['style-loader','css-loader', 'less-loader'] },
             { test: /\.html$/, use: 'html-loader' },
             { test: /\.ejs$/, use: 'ejs-loader' }
+            // { test: /\.(png|jpg|gif)$/, use: 'file-loader' }
         ]
     },
     mode: 'development'
